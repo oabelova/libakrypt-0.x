@@ -1,3 +1,6 @@
+/* ----------------------------------------------------------------------------------- */
+/* Пример example-24.c                                                             */
+/* ----------------------------------------------------------------------------------- */
 #include <stdio.h>
 #include <libakrypt.h>
 #include <libakrypt-base.h>
@@ -15,16 +18,13 @@ int main( void )
     struct hash ctx; /* контекст функции хеширования */
   
     int error = ak_error_ok;
-    bool_t result = ak_true;
-    int audit = ak_log_get_level();
 
     /* буффер длиной 32 байта (256 бит) для получения результата */
-    ak_uint8 buffer[256], out[32], *ptr = buffer;
+    ak_uint8 out[32];
 
     /* инициализируем контекст функции хешиирования */
     if(( error = ak_hash_create_streebog256( &ctx )) != ak_error_ok ) {
         ak_error_message( error, __func__ , "wrong initialization of streenbog256 context" );
-        return ak_false;
     }
 
     /* берем хеш от строки data */
@@ -32,7 +32,6 @@ int main( void )
     
     if(( error = ak_error_get_value()) != ak_error_ok ) {
         ak_error_message( error, __func__ , "invalid calculation of streebog256 code" );
-        result = ak_false;
     }
     
     //выводим
