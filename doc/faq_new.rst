@@ -15,7 +15,7 @@ FAQ по библиотеке libakrypt
   * инициализировать библиотеку с помощью функии ``ak_libakrypt_create()``,
   * после окончания криптографических преобразований выполнить функцию ``ak_libakrypt_destroy()``.
 
-Базовый шаблон программы выглядит следующим образом (файл `example-0.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-0.c>`_).
+Базовый шаблон программы выглядит следующим образом (файл `example-0.c < https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-0.c>`_).
 
 
 Как отследить ошибки при выполнении библиотечных функций?
@@ -29,7 +29,7 @@ FAQ по библиотеке libakrypt
 Где посмотреть перечисление ошибок и их кодов для проведения аудита?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Посмотреть все коды ошибок можно в файле `libakrypt-base.h <https://github.com/yupanasenko/libakrypt_faq/blob/master/source/libakrypt-base.h.in>`_ со строки 200.
+Посмотреть все коды ошибок можно в файле `libakrypt-base.h <https://github.com/oabelova/libakrypt-0.x/blob/master/source/libakrypt-base.h.in>`_ со строки 200.
 
 
 БЛОЧНЫЕ ШИФРЫ
@@ -73,7 +73,7 @@ FAQ по библиотеке libakrypt
 		const size_t salt_size /*Длина случайного вектора в байтах*/
 		)
 
-*Использование функции можно увидеть в следующих примерах:* `example-1 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-1.c>`_, `example-2 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-2.c>`_.
+*Использование функции можно увидеть в следующих примерах:* `example-1 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-1.c>`_, `example-2 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-2.c>`_.
 
 
 	2. Инициализация контекста ключа случайным (псевдо-случайным) значением, выработанным генератором псевдо-случайных чисел:
@@ -86,7 +86,7 @@ FAQ по библиотеке libakrypt
 		)
 
 
-*Использование функции можно увидеть в следующих примерах:* `example-3 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-3.c>`_, `example-4 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-4.c>`_.
+*Использование функции можно увидеть в следующих примерах:* `example-3 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-3.c>`_, `example-4 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-4.c>`_.
 
 
 	3. Инициализация контекста ключа значением, содержащимся в области памяти: 
@@ -98,7 +98,7 @@ FAQ по библиотеке libakrypt
 			const size_t size /*Размер строки со значением ключа*/
 			)
 			
-*Использование функции можно увидеть в следующих примерах:* `example-5 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-5.c>`_, `example-6 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-6.c>`_.
+*Использование функции можно увидеть в следующих примерах:* `example-5 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-5.c>`_, `example-6 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-6.c>`_.
 
 
 
@@ -113,14 +113,14 @@ FAQ по библиотеке libakrypt
 
 	int ak_bckey_create_magma(ak_bckey bkey);
 
-*Использование функции можно увидеть в следующих примерах:* `example-5 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-5.c>`_, `example-6 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-6.c>`_, `example-7 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-7.c>`_.
+*Использование функции можно увидеть в следующих примерах:* `example-5 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-5.c>`_, `example-6 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-6.c>`_, `example-7 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-7.c>`_.
 
 	2. С помощью функции алгоритма Кузнечик:
 :: 
 	
 	int ak_bckey_create_kuznechik(ak_bckey bkey);
 
-*Использование функции можно увидеть в следующих примерах:* `example-3 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-5.c>`_, `example-7 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-6.c>`_.
+*Использование функции можно увидеть в следующих примерах:* `example-3 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-5.c>`_, `example-7 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-6.c>`_.
 
 
 	3. По OID алгоритма:
@@ -136,7 +136,7 @@ FAQ по библиотеке libakrypt
         Все OID аналогичны заданию функции напрямую */  
 
 
-*Использование функции можно увидеть в следующих примерах:* `example-1 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-1.c>`_, `example-2 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-2.c>`_.
+*Использование функции можно увидеть в следующих примерах:* `example-1 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-1.c>`_, `example-2 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-2.c>`_.
 
 
 
@@ -165,7 +165,7 @@ FAQ по библиотеке libakrypt
 		size_t size   /* Размер зашифровываемых данных (в байтах)*/
 		)
 
-*Использование функций можно увидеть в следующем примере:* `example-1 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-1.c>`_.
+*Использование функций можно увидеть в следующем примере:* `example-1 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-1.c>`_.
 
 
 Как зашифровать/расшифровать данные в режиме гаммирования – из ГОСТ Р 34.13-2015 (counter mode, ctr)?
@@ -186,7 +186,7 @@ FAQ по библиотеке libakrypt
         	)
 
 
-*Использование функции можно увидеть в следующем примере:* `example-2.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-2.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-2.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-2.c>`_.
 
 
 
@@ -207,7 +207,7 @@ FAQ по библиотеке libakrypt
         	size_t iv_size /*Длина синхропосылки в байтах*/
     		)
 		
-*Использование функции можно увидеть в следующем примере:* `example-3.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-3.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-3.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-3.c>`_.
 
 
 Как зашифровать/расшифровать данные в режиме гаммирования с обратной связью по шифртексту из ГОСТ Р 34.13-2015 (cipher feedback, cfb)?
@@ -228,7 +228,7 @@ FAQ по библиотеке libakrypt
     		)
 
 
-*Использование функции можно увидеть в следующем примере:* `example-4.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-4.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-4.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-4.c>`_.
 
 
 Как зашифровать/расшифровать данные в режиме «CTR-ACPKM» из Р1323565.1.017—2018?
@@ -249,7 +249,7 @@ FAQ по библиотеке libakrypt
     		size_t iv_size /*длина имитовставки в байтах*/
     		)
 
-*Использование функции можно увидеть в следующем примере:* `example-5.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-5.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-5.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-5.c>`_.
 
 
 
@@ -289,7 +289,7 @@ FAQ по библиотеке libakrypt
      		const size_t icode_size /*ожидаемый размер имитовставки в байтах; значение не должно превышать 16 октетов;*/
 		)
 
-*Использование функций можно увидеть в следующем примере:* `example-6.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-6.c>`_.
+*Использование функций можно увидеть в следующем примере:* `example-6.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-6.c>`_.
 
 
 
@@ -339,7 +339,7 @@ FAQ по библиотеке libakrypt
 		то есть 4 байта для Магмы и 8 байт для Кузнечика */
 		);
 
-*Использование функций можно увидеть в следующем примере:* `example-7.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-7.c>`_.
+*Использование функций можно увидеть в следующем примере:* `example-7.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-7.c>`_.
 
 
 
@@ -374,77 +374,77 @@ FAQ по библиотеке libakrypt
 
 	int ak_aead_create_mgm_magma(ak_aead ctx, bool_t crf)
 
-*Использование функции можно увидеть в следующем примере:* `example-8.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-8.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-8.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-8.c>`_.
 
 	2. Создание контекста алгоритма аутентифицированного шифрования Р 1323565.1.024-2019 для блочного шифра Кузнечик
 ::
 
 	int ak_aead_create_mgm_kuznechik(ak_aead ctx, bool_t crf)
 	
-*Использование функции можно увидеть в следующем примере:* `example-9.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-9.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-9.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-9.c>`_.
 	
 	3. Создание контекста алгоритма аутентифицированного шифрования xtsmac для блочного шифра Магма
 ::
 
 	int ak_aead_create_xtsmac_magma(ak_aead ctx, bool_t crf)
 	
-*Использование функции можно увидеть в следующем примере:* `example-10.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-10.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-10.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-10.c>`_.
 
 	4. Создание контекста алгоритма аутентифицированного шифрования ctr-cmac для блочного шифра Магма
 :: 
 
 	int ak_aead_create_ctr_cmac_magma(ak_aead ctx, bool_t crf)
 	
-*Использование функции можно увидеть в следующем примере:* `example-11.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-11.c>`_	.
+*Использование функции можно увидеть в следующем примере:* `example-11.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-11.c>`_	.
 	
 	5. Создание контекста алгоритма аутентифицированного шифрования ctr-cmac для блочного шифра Кузнечик
 ::
 
 	int ak_aead_create_ctr_cmac_kuznechik(ak_aead ctx, bool_t crf)
 	
-*Использование функции можно увидеть в следующем примере:* `example-12.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-12.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-12.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-12.c>`_.
 
 	6. Создание контекста алгоритма аутентифицированного шифрования ctr-nmac для блочного шифра Магма
 :: 
 
 	int ak_aead_create_ctr_nmac_magma(ak_aead ctx, bool_t crf)
 
-*Использование функции можно увидеть в следующем примере:* `example-13.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-13.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-13.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-13.c>`_.
 
 	7. Создание контекста алгоритма аутентифицированного шифрования ctr-nmac для блочного шифра Кузнечик
 ::
 
 	int ak_aead_create_ctr_nmac_kuznechik(ak_aead ctx, bool_t crf)
 
-*Использование функции можно увидеть в следующем примере:* `example-14.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-14.c>`_
+*Использование функции можно увидеть в следующем примере:* `example-14.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-14.c>`_
 
 	8. Создание контекста алгоритма аутентифицированного шифрования ctr-hmac для блочного шифра Магма и функции хеширования Стрибог256
 ::
 
 	int ak_aead_create_ctr_hmac_magma_streebog256(ak_aead ctx, bool_t crf)
 	
-*Использование функции можно увидеть в следующем примере:* `example-15.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-15.c>`_	.
+*Использование функции можно увидеть в следующем примере:* `example-15.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-15.c>`_	.
 	
 	9. Создание контекста алгоритма аутентифицированного шифрования ctr-hmac для блочного шифра Кузнечик и функции хеширования Стрибог256
 ::
 
 	int ak_aead_create_ctr_hmac_kuznechik_streebog256(ak_aead ctx, bool_t crf)
 
-*Использование функции можно увидеть в следующем примере:* `example-16.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-16.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-16.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-16.c>`_.
 
 	10. Создание контекста алгоритма аутентифицированного шифрования ctr-hmac для блочного шифра Магма и функции хеширования Стрибог512
 ::
 	
 	int ak_aead_create_ctr_hmac_magma_streebog512(ak_aead ctx, bool_t crf)
 	
-*Использование функции можно увидеть в следующем примере:* `example-17.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-17.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-17.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-17.c>`_.
 
 	11. Создание контекста алгоритма аутентифицированного шифрования ctr-hmac для блочного шифра Кузнечик и функции хеширования Стрибог512
 ::
 
 	int ak_aead_create_ctr_hmac_kuznechik_streebog512(ak_aead ctx, bool_t crf)
 	
-*Использование функции можно увидеть в следующем примере:* `example-18.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-18.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-18.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-18.c>`_.
 
 	12. Создание контекста алгоритма аутентифицированного шифрования по заданному oid
 ::
@@ -467,7 +467,7 @@ FAQ по библиотеке libakrypt
     
     	Все OID аналогичны заданию функции напрямую */
 
-*Использование функции можно увидеть в следующем примере:* `example-19.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-19.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-19.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-19.c>`_.
 
 
 Как инициализировать ключи аутентификации и шифрования?
@@ -491,7 +491,7 @@ FAQ по библиотеке libakrypt
     			const size_t size      /* Размер ключа аутентификации (в октетах) */
     			)
 			
-*Использование функции можно увидеть в следующем примере:* `example-8.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-8.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-8.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-8.c>`_.
 
 	2. Инициализация общей функцией:
 ::
@@ -506,7 +506,7 @@ FAQ по библиотеке libakrypt
     			const size_t size       /* Размер ключа аутентификации (в октетах) */
     			)
 			
-*Использование функций можно увидеть в следующих примерах:* `example-9.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-9.c>`_, `example-10.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-10.c>`_, `example-11.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-11.c>`_, `example-12.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-12.c>`_, `example-13.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-13.c>`_, `example-14.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-14.c>`_, `example-15.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-15.c>`_, `example-16.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-16.c>`_, `example-17.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-17.c>`_, `example-18.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-18.c>`_, `example-19.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-19.c>`_.
+*Использование функций можно увидеть в следующих примерах:* `example-9.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-9.c>`_, `example-10.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-10.c>`_, `example-11.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-11.c>`_, `example-12.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-12.c>`_, `example-13.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-13.c>`_, `example-14.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-14.c>`_, `example-15.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-15.c>`_, `example-16.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-16.c>`_, `example-17.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-17.c>`_, `example-18.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-18.c>`_, `example-19.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-19.c>`_.
 
 
 Как зашифровать/расшифровать данные с помощью аутентифицируемого шифрования с одновременным вычислением/проверки имитовставки?
@@ -543,7 +543,7 @@ FAQ по библиотеке libakrypt
     			const size_t icode_size   /* ожидаемый размер имитовставки в байтах */
     			))
 
-*Использование функций можно увидеть в следующих примерах:* `example-8.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-8.c>`_, `example-9.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-9.c>`_, `example-10.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-10.c>`_, `example-11.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-11.c>`_, `example-12.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-12.c>`_, `example-13.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-13.c>`_, `example-14.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-14.c>`_, `example-15.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-15.c>`_, `example-16.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-16.c>`_, `example-17.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-17.c>`_, `example-18.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-18.c>`_, `example-19.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-19.c>`_.
+*Использование функций можно увидеть в следующих примерах:* `example-8.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-8.c>`_, `example-9.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-9.c>`_, `example-10.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-10.c>`_, `example-11.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-11.c>`_, `example-12.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-12.c>`_, `example-13.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-13.c>`_, `example-14.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-14.c>`_, `example-15.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-15.c>`_, `example-16.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-16.c>`_, `example-17.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-17.c>`_, `example-18.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-18.c>`_, `example-19.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-19.c>`_.
 
 
 ЭЛЕКТРОННАЯ ПОДПИСЬ
@@ -580,7 +580,7 @@ FAQ по библиотеке libakrypt
     			эллиптической кривой, на которой будет реализован криптографический алгоритм */
      			)
 			
-*Использование функции можно увидеть в следующих примерах:* `example-20 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-20.c>`_, `example-21 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-21.c>`_, `example-22 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-22.c>`_.
+*Использование функции можно увидеть в следующих примерах:* `example-20 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-20.c>`_, `example-21 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-21.c>`_, `example-22 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-22.c>`_.
 
 
 Как создать секретный ключ электронной подписи?
@@ -595,7 +595,7 @@ FAQ по библиотеке libakrypt
     			ak_random generator /*контекст генератора случайных чисел*/
  			)
 			
-*Использование функции можно увидеть в следующем примере:* `example-20 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-20.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-20 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-20.c>`_.
 				
 	2. Инициализировать секретный ключ константным значением:
 ::
@@ -607,7 +607,7 @@ FAQ по библиотеке libakrypt
     			const size_t size /* размер ключа в байтах */
     			)
 
-*Использование функции можно увидеть в следующих примерах:* `example-21 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-21.c>`_, `example-22 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-22.c>`_.
+*Использование функции можно увидеть в следующих примерах:* `example-21 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-21.c>`_, `example-22 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-22.c>`_.
 	
 
 Как создать открытый ключ электронной подписи?
@@ -624,7 +624,7 @@ FAQ по библиотеке libakrypt
 		ak_signkey sctx /* контекст секретного ключа ЭП */
 		)
 
-*Использование функции можно увидеть в следующих примерах:* `example-21 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-21.c>`_, `example-22 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-22.c>`_.
+*Использование функции можно увидеть в следующих примерах:* `example-21 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-21.c>`_, `example-22 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-22.c>`_.
 	
 
 Как подписать данные электронной подписью?
@@ -642,7 +642,7 @@ FAQ по библиотеке libakrypt
     			)
 			
 
-*Использование функции можно увидеть в следующем примере:* `example-20 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-20.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-20 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-20.c>`_.
 
 	2. Подпись строки данных:
 ::
@@ -658,7 +658,7 @@ FAQ по библиотеке libakrypt
     			)
 			
 
-*Использование функции можно увидеть в следующем примере:* `example-21 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-21.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-21 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-21.c>`_.
 
 	3. Подпись файла:
 ::
@@ -674,7 +674,7 @@ FAQ по библиотеке libakrypt
     			)
 			
 
-*Использование функции можно увидеть в следующем примере:* `example-22 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-22.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-22 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-22.c>`_.
 
 
 Как проверить электронную подпись?
@@ -691,7 +691,7 @@ FAQ по библиотеке libakrypt
     			ak_pointer sign /* электронная подпись, для которой выполняется проверка */
     		 	)
 
-*Использование функции можно увидеть в следующем примере:* `example-21 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-21.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-21 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-21.c>`_.
 
 	2. Файл в качестве подписанных данных:
 :: 
@@ -702,7 +702,7 @@ FAQ по библиотеке libakrypt
     			ak_pointer sign /* электронная подпись, для которой выполняется проверка */
     			)
 			
-*Использование функции можно увидеть в следующем примере:* `example-22 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-22.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-22 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-22.c>`_.
 
 	3. Хеш-код сообщения в качестве подписанных данных:
 ::
@@ -730,7 +730,7 @@ FAQ по библиотеке libakrypt
 			int len /* количество кодируемых октетов (от одного до трех) */
 			)
 
-*Использование функции можно увидеть в следующем примере:* `example-32 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-32.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-32 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-32.c>`_.
 
 
 Как взять хэш от данных?
@@ -746,14 +746,14 @@ FAQ по библиотеке libakrypt
 
 	int ak_hash_create_streebog256( ak_hash hctx /* Контекст функции хеширования */)
 	
-*Использование функции можно увидеть в следующем примере:* `example-24.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-24.c>`_.	
+*Использование функции можно увидеть в следующем примере:* `example-24.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-24.c>`_.	
 	
 	2. Инициализация контекста алгоритма бесключевого хеширования, регламентируемого стандартом ГОСТ Р 34.11-2012, с длиной хешкода, равной 512 бит 	(функция Стрибог512):
 ::
 
 	int ak_hash_create_streebog512( ak_hash hctx /* Контекст функции хеширования */)
 
-*Использование функции можно увидеть в следующем примере:* `example-25.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-25.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-25.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-25.c>`_.
 
 	3. Инициализация контекста алгоритма по его OID:
 ::
@@ -763,7 +763,7 @@ FAQ по библиотеке libakrypt
 			ak_oid oid /* OID алгоритма бесключевого хеширования */
 			)
 
-*Использование функции можно увидеть в следующем примере:* `example-26.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-26.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-26.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-26.c>`_.
 
 
 Для хэширования данных необходимо использовать следующие функции, в зависимости от типа хэшируемых данных:
@@ -779,7 +779,7 @@ FAQ по библиотеке libakrypt
 			const size_t out_size /* Размер области памяти (в октетах), в которую будет помещен результат */
 			)
 			
-*Использование функции можно увидеть в следующих примерах:* `example-25.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-25.c>`_, `example-26.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-26.c>`_.
+*Использование функции можно увидеть в следующих примерах:* `example-25.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-25.c>`_, `example-26.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-26.c>`_.
 		
 	2. Хэш от файла:
 ::
@@ -813,7 +813,7 @@ FAQ по библиотеке libakrypt
 			ak_uint32 *out /* Область памяти куда помещается результат */
 			)
 
-*Использование функций можно увидеть в следующих примерах:* `example-31.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-31.c>`_ и `example-30.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-30.c>`_ соответственно.
+*Использование функций можно увидеть в следующих примерах:* `example-31.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-31.c>`_ и `example-30.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-30.c>`_ соответственно.
 
 
 
@@ -831,7 +831,7 @@ FAQ по библиотеке libakrypt
 			(человекочитаемое) имя криптографического механизмаили параметра */ 
 			)
 			
-*Использование функции можно увидеть в следующих примерах:* `example-1 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-1.c>`_, `example-2 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-2.c>`_.			
+*Использование функции можно увидеть в следующих примерах:* `example-1 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-1.c>`_, `example-2 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-2.c>`_.			
 			
 			
 	2. Поиск по режиму работы криптографического механизма
@@ -841,7 +841,7 @@ FAQ по библиотеке libakrypt
 			const oid_modes_t mode /* режим работы криптографического механизма */
 			)
 
-*Использование функции можно увидеть в следующем примере:* `example-33 <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-33.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-33 <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-33.c>`_.
 
 
 
@@ -858,7 +858,7 @@ FAQ по библиотеке libakrypt
 
 	int ak_random_create_lcg(ak_random generator)
 
-*Использование функции можно увидеть в следующем примере:* `example-3.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-3.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-3.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-3.c>`_.
 
 	2. Нелинейный конгруэнтный генератор с обратной квадратичной связью (Nonlinear-feedback shift register, nlfsr) без параметров:
 ::
@@ -871,7 +871,7 @@ FAQ по библиотеке libakrypt
 	
 	*/
 	
-*Использование функции можно увидеть в следующих примерах:* `example-4.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-4.c>`_, `example-7.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-7.c>`_.
+*Использование функции можно увидеть в следующих примерах:* `example-4.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-4.c>`_, `example-7.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-7.c>`_.
 	
 	3. Нелинейный конгруэнтный генератор с обратной квадратичной связью (Nonlinear-feedback shift register, nlfsr) с параметрами:
 ::
@@ -881,7 +881,7 @@ FAQ по библиотеке libakrypt
 			ak_uint64 linear_part /* код линейной части обратной связи */
 			)
 	
-*Описание функции можно найти в файле* `ak_random.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/source/ak_random.c>`_ *на строке 697*.
+*Описание функции можно найти в файле* `ak_random.c <https://github.com/oabelova/libakrypt-0.x/blob/master/source/ak_random.c>`_ *на строке 697*.
 	
 	4. Генератор по заданному OID алгоритма генерации псевдо-случайных чисел:
 :: 
@@ -890,7 +890,7 @@ FAQ по библиотеке libakrypt
 			ak_oid oid /* OID генератора */
 			
 
-*Использование функции можно увидеть в следующем примере:* `example-20.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-20.c>`_
+*Использование функции можно увидеть в следующем примере:* `example-20.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-20.c>`_
 
 
 Как сравнить две области памяти одинакового размера?
@@ -899,7 +899,7 @@ FAQ по библиотеке libakrypt
 
 ``bool_t ak_ptr_is_equal( ak_const_pointer left, ak_const_pointer right, const size_t size )``.
 
-*Пример использования можно найти в файле ak_tools.c на строке 633:* `ak_tools.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/source/ak_tools.c>`_
+*Пример использования можно найти в файле ak_tools.c на строке 633:* `ak_tools.c <https://github.com/oabelova/libakrypt-0.x/blob/master/source/ak_tools.c>`_
 	
 
 Как открыть файл на чтение?
@@ -914,7 +914,7 @@ FAQ по библиотеке libakrypt
 
 ``ssize_t ak_file_read( ak_file file, ak_pointer buffer, size_t size )``.
 
-*Использование функций можно увидеть в следующем примере:* `example-23.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-23.c>`_
+*Использование функций можно увидеть в следующем примере:* `example-23.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-23.c>`_
 
 
 Как прочитать пароль из консоли?
@@ -928,7 +928,7 @@ FAQ по библиотеке libakrypt
 			const size_t psize /* Максимально возможная длина пароля */
 			)
 
-*Использование функции можно увидеть в следующем примере:* `example-28.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-28.c>`_
+*Использование функции можно увидеть в следующем примере:* `example-28.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-28.c>`_
 
 
 Как прочитать строку из консоли?
@@ -943,7 +943,7 @@ FAQ по библиотеке libakrypt
 			size_t *size /* переменная, в которой возвращается размер введенной строки */
 			)
 
-*Использование функции можно увидеть в следующем примере:* `example-29.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-29.c>`_
+*Использование функции можно увидеть в следующем примере:* `example-29.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-29.c>`_
 
 
 Как регулировать уровень аудита?
@@ -976,7 +976,7 @@ FAQ по библиотеке libakrypt
 			const char *message /* Имя функции, вызвавшей ошибку */
 			)
 		
-*Использование функции можно увидеть в следующем примере:* `example-26.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-26.c>`_.
+*Использование функции можно увидеть в следующем примере:* `example-26.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-26.c>`_.
 
 Низкоуровневая функция вывода строк в устройство аудита может быть установлена
 с помощью ``ak_log_set_function()``. Примерами устанавливаемых функций являются:
@@ -992,7 +992,7 @@ FAQ по библиотеке libakrypt
 	* Второй уровень аудита - ``ak_log_standard`` - выводятся все сообщения из первого уровня, а также сообщения, регламентируемые существующей 		нормативной базой;
 	* Третий (максимальный) уровень - ``ak_log_maximum`` - выводятся все сообщения, доступные на первых двух уровнях, а также сообщения отладочного 	характера, позволяющие проследить логику работы функций библиотеки.
    
-*Использование функции можно увидеть в следующих примерах:* `example-20.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-20.c>`_, `example-21.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-20.c>`_, `example-22.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-20.c>`_.
+*Использование функции можно увидеть в следующих примерах:* `example-20.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-20.c>`_, `example-21.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-20.c>`_, `example-22.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-20.c>`_.
 
 
 Как преобразовать строку шестнадцатиричных символов в массив данных?
@@ -1007,157 +1007,157 @@ FAQ по библиотеке libakrypt
 			const bool_t reverse /* Последовательность считывания байт в память */
 			)
 
-*Использование функции можно увидеть в следующем примере:* `example-27.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-27.c>`_
+*Использование функции можно увидеть в следующем примере:* `example-27.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-27.c>`_
 
 ОПИСАНИЕ ПРИМЕРОВ
 ------------------------------
-`example-1.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-1.c>`_  	
+`example-1.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-1.c>`_  	
 	* создание секретного ключа алгоритма Кузнечик по OID;
 	* инициализация контекста ключа значением, выработанным из заданного значения пароля; 
 	* зашифрование и расшифрование текста в режиме простой замены (ecb).
 
-`example-2.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-2.c>`_ 
+`example-2.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-2.c>`_ 
 	* создание секретного ключа алгоритма Магма по OID;
 	* инициализация контекста ключа значением, выработанным из заданного значения пароля; 
 	* зашифрование и расшифрование текста в режиме ctr.
 
-`example-3.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-3.c>`_
+`example-3.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-3.c>`_
 	* создание секретного ключа алгоритма Кузнечик; 
 	* инициализация контекста ключа случайным (псевдо-случайным) значением, выработанным генератором псевдо-случайных чисел (lcg); 
 	* зашифрование и расшифрование текста в режиме ofb.
 
-`example-4.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-4.c>`_
+`example-4.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-4.c>`_
 	* создание секретного ключа алгоритма Магма; 
 	* инициализация контекста ключа случайным (псевдо-случайным) значением, выработанным генератором псевдо-случайных чисел (nlfsr); 
 	* зашифрование и расшифрование текста в режиме cfb.
 
-`example-5.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-5.c>`_
+`example-5.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-5.c>`_
 	* создание секретного ключа алгоритма Магма; 
 	* инициализация контекста ключа значением, содержащимся в области памяти; 
 	* зашифрование и расшифрование текста в режиме acpkm. 
 
-`example-6.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-6.c>`_ 
+`example-6.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-6.c>`_ 
 	* создание секретного ключа алгоритма Магма; 
 	* инициализация контекста ключа значением, содержащимся в области памяти; 
 	* зашифрование и расшифрование текста в режиме xtsmac. 
 
-`example-7.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-7.c>`_
+`example-7.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-7.c>`_
 	* создание секретного ключа алгоритма Кузнечик; 
 	* инициализация контекста ключа случайным (псевдо-случайным) значением, выработанным генератором псевдо-случайных чисел (nlfsr); 
 	* зашифрование и расшифрование текста в режиме cbc. 
 
-`example-8.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-8.c>`_
+`example-8.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-8.c>`_
 	* создание контекста алгоритма аутентифицированного шифрования Р 1323565.1.024-2019 для блочного шифра Магма; 
 	* инициализация контекста алгоритма aead значениями ключей шифрования и аутентификации по отдельности; 
 	* зашифрование данных с одновременным вычислением имитовставки.
 
-`example-9.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-9.c>`_
+`example-9.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-9.c>`_
 	* создание контекста алгоритма аутентифицированного шифрования Р 1323565.1.024-2019 для блочного шифра Кузнечик; 
 	* инициализация контекста алгоритма aead значениями ключей шифрования и аутентификации; 
 	* зашифрование данных с одновременным вычислением имитовставки.
 
-`example-10.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-10.c>`_
+`example-10.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-10.c>`_
 	* создание контекста алгоритма аутентифицированного шифрования xtsmac для блочного шифра Магма; 
 	* инициализация контекста алгоритма aead значениями ключей шифрования и аутентификации; 
 	* зашифрование данных с одновременным вычислением имитовставки.
 
-`example-11.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-11.c>`_
+`example-11.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-11.c>`_
 	* создание контекста алгоритма аутентифицированного шифрования ctr-cmac для блочного шифра Магма; 
 	* инициализация контекста алгоритма aead значениями ключей шифрования и аутентификации; 
 	* зашифрование данных с одновременным вычислением имитовставки.
 
-`example-12.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-12.c>`_
+`example-12.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-12.c>`_
 	* создание контекста алгоритма аутентифицированного шифрования ctr-cmac для блочного шифра Кузнечик; 
 	* инициализация контекста алгоритма aead значениями ключей шифрования и аутентификации;
 	* зашифрование данных с одновременным вычислением имитовставки. 
 
-`example-13.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-13.c>`_
+`example-13.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-13.c>`_
 	* создание контекста алгоритма аутентифицированного шифрования ctr-nmac для блочного шифра Магма; 
 	* инициализация контекста алгоритма aead значениями ключей шифрования и аутентификации; 
 	* зашифрование данных с одновременным вычислением имитовставки. 
 
-`example-14.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-14.c>`_
+`example-14.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-14.c>`_
 	* создание контекста алгоритма аутентифицированного шифрования ctr-nmac для блочного шифра Кузнечик; 
 	* инициализация контекста алгоритма aead значениями ключей шифрования и аутентификации; 
 	* зашифрование данных с одновременным вычислением имитовставки. 
 
-`example-15.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-15.c>`_
+`example-15.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-15.c>`_
 	* создание контекста алгоритма аутентифицированного шифрования ctr-hmac для блочного шифра Магма и функции хеширования Стрибог256; 
 	* инициализация контекста алгоритма aead значениями ключей шифрования и аутентификации; 
 	* зашифрование данных с одновременным вычислением имитовставки.
 
-`example-16.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-16.c>`_
+`example-16.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-16.c>`_
 	* создание контекста алгоритма аутентифицированного шифрования ctr-hmac для блочного шифра Кузнечик и функции хеширования Стрибог256; 
 	* инициализация контекста алгоритма aead значениями ключей шифрования и аутентификации; 
 	* зашифрование данных с одновременным вычислением имитовставки.
 
-`example-17.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-17.c>`_
+`example-17.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-17.c>`_
 	* создание контекста алгоритма аутентифицированного шифрования ctr-hmac для блочного шифра Магма и функции хеширования Стрибог512; 
 	* инициализация контекста алгоритма aead значениями ключей шифрования и аутентификации; 
 	* зашифрование данных с одновременным вычислением имитовставки.
 
-`example-18.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-18.c>`_
+`example-18.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-18.c>`_
 	* создание контекста алгоритма аутентифицированного шифрования ctr-hmac для блочного шифра Кузнечик и функции хеширования Стрибог512;
 	* инициализация контекста алгоритма aead значениями ключей шифрования и аутентификации; 
 	* зашифрование данных с одновременным вычислением имитовставки. 
 
-`example-19.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-19.c>`_
+`example-19.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-19.c>`_
 	* создание контекста алгоритма аутентифицированного шифрования по заданному OID; 
 	* инициализация контекста алгоритма aead значениями ключей шифрования и аутентификации; 
 	* зашифрование данных с одновременным вычислением имитовставки.
 
-`example-20.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-20.c>`_
+`example-20.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-20.c>`_
 	* использование электронной подписи на основе вычисленного хеш-кода подписываемого сообщения;
 	* выставление уровня аудита;
 	* инициализация контекста секретного ключа алгоритма электронной подписи случайным (псевдо-случайным) значением, выработанным генератором 		псевдо-случайных чисел (lcg).
 	
-`example-21.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-21.c>`_
+`example-21.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-21.c>`_
 	* использование электронной подписи для константного значения строки;
 	* выставление уровня аудита;
 	* инициализация контекста секретного ключа алгоритма электронной подписи константным значением;
 	* проверка электронной подписи строки.
 
-`example-22.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-22.c>`_
+`example-22.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-22.c>`_
 	* использование электронной подписи для исполняемого файла;
 	* выставление уровня аудита;
 	* инициализация контекста секретного ключа алгоритма электронной подписи константным значением;
 	* проверка электронной подписи файла.
 	
-`example-23.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-23.c>`_
+`example-23.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-23.c>`_
 	* открытие файла на чтение;
 	* чтение электронной подписи из файла.
 	
-`example-24.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-24.c>`_
+`example-24.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-24.c>`_
 	* инициализация контекста алгоритма бесключевого хеширования, регламентируемого стандартом ГОСТ Р 34.11-2012, с длиной хешкода, равной 256 бит 		(функция Стрибог256);
 	* хэширование константной строки.
 
-`example-25.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-25.c>`_
+`example-25.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-25.c>`_
 	* инициализация контекста алгоритма бесключевого хеширования, регламентируемого стандартом ГОСТ Р 34.11-2012, с длиной хешкода, равной 512 бит 		(функция Стрибог512);
 	* хэширование константной строки. 
 	
-`example-26.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-26.c>`_
+`example-26.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-26.c>`_
 	* инициализация контекста алгоритма бесключевого хеширования, регламентируемого стандартом ГОСТ Р 34.11-2012, с длиной хешкода, равной 512 бит 		(функция Стрибог512) (поиск алгоритма по его OID);
 	* хэширование константной строки.
 	
-`example-27.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-27.c>`_
+`example-27.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-27.c>`_
 	* преобразование строки символов, содержащую последовательность шестнадцатеричных цифр, в массив данных.
 	
-`example-28.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-28.c>`_
+`example-28.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-28.c>`_
 	* чтение пароля из консоли.
 
-`example-29.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-29.c>`_
+`example-29.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-29.c>`_
 	* чтение строки символов из консоли.
 
-`example-30.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-30.c>`_
+`example-30.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-30.c>`_
 	* вычисление 32-битной контрольной суммы модифицированным алгоритмом Флетчера. 
 	
-`example-31.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-31.c>`_
+`example-31.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-31.c>`_
 	* вычисление 32-битной контрольной суммы алгоритмом Флетчера.
 
-`example-32.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-32.c>`_
+`example-32.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-32.c>`_
 	* реализация преобразования строки алгоритмом base64.
 	
-`example-33.c <https://github.com/yupanasenko/libakrypt_faq/blob/master/examples/faq/example-33.c>`_
+`example-33.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-33.c>`_
 	* выработка контекста алгоритма аутентифицированного шифрования;
 	* выработка имитовставки;
 	* зашифрование и расшифрование текста алгоритмом ctr apckm.
