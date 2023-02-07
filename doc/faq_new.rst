@@ -15,7 +15,7 @@ FAQ по библиотеке libakrypt
   * инициализировать библиотеку с помощью функии ``ak_libakrypt_create()``,
   * после окончания криптографических преобразований выполнить функцию ``ak_libakrypt_destroy()``.
 
-Базовый шаблон программы выглядит следующим образом (файл `example-0.c < https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-0.c>`_).
+Базовый шаблон программы выглядит следующим образом (файл `example-0.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-0.c>`_).
 
 
 Как отследить ошибки при выполнении библиотечных функций?
