@@ -1011,6 +1011,9 @@ FAQ по библиотеке libakrypt
 
 ОПИСАНИЕ ПРИМЕРОВ
 ------------------------------
+`example-0.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-0.c>`_  	
+	* базовый шаблон программы.
+	
 `example-1.c <https://github.com/oabelova/libakrypt-0.x/blob/master/examples/faq/example-1.c>`_  	
 	* создание секретного ключа алгоритма Кузнечик по OID;
 	* инициализация контекста ключа значением, выработанным из заданного значения пароля; 
